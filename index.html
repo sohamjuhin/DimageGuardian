@@ -1,18 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <title>DimageGuardian</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Upload an Image & Video for Deepfake Detection</h1>
-    <form action="/upload" method="post" enctype="multipart/form-data">
-        <input type="file" name="file">
-        <input type="submit" value="Upload">
-    </form>
-    <div>
-        {% if prediction %}
-            <h2>Prediction: {{ prediction }}</h2>
-        {% endif %}
-    </div>
+    <h1>Image Deepfake Detection</h1>
+    <input type="file" id="fileInput">
+    <button onclick="uploadImage()">Upload</button>
+    <div id="result"></div>
+
+    <script src="script.js"></script>
 </body>
 </html>
+
+
+
+DimageGuardian
